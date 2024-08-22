@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #6ab04c;
+}
+
+.employee {
+    border: 5px solid #6ab04c; /* Green border */
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(106, 176, 76, 0.5), /* Green glow effect */
+                0 0 0 3px rgba(106, 176, 76, 0.3); /* Highlight border */
+}
+
+.employee h2 {
+    margin-top: 0;
+    color: #000; /* Black text color */
+}
+
+.more-button {
+    background-color: #6ab04c; /* Green color */
+    border: none; /* Remove border */
+    color: #fff; /* White text color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}

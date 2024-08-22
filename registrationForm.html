@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+
+    <link rel="stylesheet" href="assets/registrationForm.css" />
+  </head>
+  <body>
+    <form>
+      <label for="title"><h2>Registration Form</h2></label>
+
+      <input type="radio" id="ms" name="title" value="Ms" />
+      <label for="ms">Ms</label>
+      <input type="radio" id="mr" name="title" value="Mr" />
+      <label for="mr">Mr</label><br /><br>
+
+      <label for="role">Role:</label><br />
+      <select id="role" name="role">
+
+        <option value="" disabled selected>Choose</option>
+        <option value="admin">Admin</option>
+        <option value="client">Client</option>
+      </select><br />
+
+      <div id="additional-fields"></div>
+
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" required /><br />
+
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required /><br />
+
+      <label for="password">Password:</label><br />
+      <input type="password" id="password" name="password" required /><br />
+
+      <label for="confirm_password">Confirm Password:</label><br />
+      <input
+        type="password"
+        id="confirm_password"
+        name="confirm_password"
+        required
+      /><br />
+
+      <label for="country_code">Country Code:</label><br />
+      <select id="country_code" name="country_code">
+        <option value="" disabled selected>Choose</option> <!-- Default "Choose" option -->
+        <option value="+1">+1 (United States)</option>
+        <option value="+44">+44 (United Kingdom)</option>
+        <option value="+91" default selected>+91 (India)</option>
+        <option value="+86">+86 (China)</option>
+        <option value="+81">+81 (Japan)</option>
+        <option value="+7">+7 (Russia)</option>
+        <option value="+33">+33 (France)</option>
+        <option value="+49">+49 (Germany)</option>
+        <option value="+55">+55 (Brazil)</option>
+        <option value="+62">+62 (Indonesia)</option>
+        <option value="+82">+82 (South Korea)</option>
+        <option value="+90">+90 (Turkey)</option>
+        <option value="+92">+92 (Pakistan)</option>
+        <option value="+234">+234 (Nigeria)</option>
+        <option value="+20">+20 (Egypt)</option>
+        <option value="+91">+91 (India)</option>
+        <option value="+65">+65 (Singapore)</option>
+        <option value="+60">+60 (Malaysia)</option>
+        <option value="+64">+64 (New Zealand)</option>
+        <option value="+1">+1 (Canada)</option>
+        <option value="+506">+506 (Costa Rica)</option>
+        <option value="+45">+45 (Denmark)</option>
+        <option value="+358">+358 (Finland)</option>
+        <option value="+852">+852 (Hong Kong)</option>
+        <option value="+353">+353 (Ireland)</option>
+        <option value="+972">+972 (Israel)</option>
+        <option value="+39">+39 (Italy)</option>
+        <option value="+81">+81 (Japan)</option>
+        <option value="+52">+52 (Mexico)</option>
+        <option value="+31">+31 (Netherlands)</option>
+        <option value="+64">+64 (New Zealand)</option>
+        <option value="+63">+63 (Philippines)</option>
+        <option value="+7">+7 (Russia)</option>
+        <option value="+27">+27 (South Africa)</option>
+        <option value="+34">+34 (Spain)</option>
+        <option value="+46">+46 (Sweden)</option>
+        <option value="+41">+41 (Switzerland)</option>
+        <option value="+971">+971 (United Arab Emirates)</option>
+        <option value="+44">+44 (United Kingdom)</option>
+        <option value="+58">+58 (Venezuela)</option>
+        <option value="+84">+84 (Vietnam)</option>
+        <option value="+86">+86 (China)</option>
+        <option value="+420">+420 (Czech Republic)</option>
+        <option value="+420">+420 (Czech Republic)</option>
+        <option value="+55">+55 (Brazil)</option>
+        <option value="+91">+91 (India)</option>
+        <option value="+82">+82 (South Korea)</option>
+        <option value="+60">+60 (Malaysia)</option>
+        <option value="+52">+52 (Mexico)</option>
+        <option value="+92">+92 (Pakistan)</option>
+        <option value="+63">+63 (Philippines)</option></select
+      ><br />
+
+      <label for="mobile">Mobile No:</label><br />
+      <input type="tel" id="mobile" name="mobile" required /><br />
+
+      <label for="gender">Gender:</label><br />
+      <select id="gender" name="gender">
+        <!-- Default "Choose" option -->
+        <option value="" disabled selected>Choose</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option></select
+      >
+
+      
+
+      <button id="submit"> Submit</button>
+    </form>
+  </body>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+  <script src="assets/registrationForm.js"></script>
+
+</html>

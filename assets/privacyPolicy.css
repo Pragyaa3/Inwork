@@ -1,0 +1,110 @@
+/* Resetting default margin and padding */
+body, h1, h2, p, ol, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f8f2; /* Light green background */
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #2c6b2c; /* Green border */
+    border-right: 5px solid #2c6b2c; /* Green border */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #2c6b2c; /* Green border */
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #2c6b2c; /* Dark green color */
+    font-family: 'Georgia', serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+p, li {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+ol {
+    margin-left: 20px;
+    padding-left: 20px;
+    list-style-type: decimal;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    text-indent: 20px;
+    line-height: 2;
+}
+
+/* Additional styles for a green-themed page */
+header h1:before {
+    content: "🔒 ";
+}
+
+header h1:after {
+    content: " 🔐";
+}
+
+.container::before, .container::after {
+    content: "";
+    display: block;
+    height: 10px;
+    background: linear-gradient(90deg, #2c6b2c, #3ca64c);
+    border-radius: 5px 5px 0 0;
+}
+
+.container::after {
+    border-radius: 0 0 5px 5px;
+    background: linear-gradient(90deg, #3ca64c, #2c6b2c);
+}
+
+/* Style the list items */
+ol li {
+    margin-bottom: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #555;
+    position: relative;
+    padding-left: 20px;
+}
+
+ol li::before {
+    content: "✔";
+    color: #2c6b2c; /* Dark green color */
+    position: absolute;
+    left: 0;
+    font-size: 18px;
+}

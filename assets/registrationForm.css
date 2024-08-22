@@ -1,0 +1,75 @@
+body {
+  background-image: url('../pictures/registerBG.jpg'); /* Replace 'background-image.jpg' with your image path */
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.6); /* Slightly transparent white background */
+  padding: 30px;
+  border: 8px solid #4caf50; /* Thick green border */
+  border-radius: 15px;
+  width: 350px;
+  height: calc(100vh - 90px); /* Adjust the height as needed */
+  box-shadow: 0 0 0 2.5px #4caf50 inset;
+  animation: fadeIn 0.5s ease-in-out;
+  overflow-y: auto;
+}
+
+h2 {
+  text-align: center;
+  color: #4caf50;
+  margin-top: -25px;
+}
+
+label {
+  font-weight: bold;
+  color: #333; /* Dark gray text */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #4caf50;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+form #submit {
+  width: 60%;
+  padding: 12px;
+  background-color: #4caf50; /* Green button */
+  color: #ffffff;
+  border: none;
+  border-radius: 20px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 18px; /* Set font size */
+  display: block; /* Make it block-level element */
+  margin: 0 auto; /* Center horizontally */
+}
+
+/* Hover effect for the submit button */
+form #submit:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

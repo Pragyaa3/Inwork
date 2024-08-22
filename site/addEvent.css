@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+h1 {
+    text-align: center;
+    color: #4CAF50; /* Green text color */
+}
+
+#calendar {
+    width: 300px;
+    margin: 20px auto;
+}
+
+.month {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    display: inline;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.weekdays {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    background-color: #ddd; /* Light gray background */
+    border-radius: 5px;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+}
+
+.days {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.days li {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 5px;
+    background-color: #eee; /* Light gray background */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.prev, .next {
+    cursor: pointer;
+}

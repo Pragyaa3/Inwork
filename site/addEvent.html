@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Event</title>
+    <link rel="stylesheet" href="addEvent.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Add Event</h1>
+        <div id="calendar">
+            <div class="month">
+                <ul>
+                    <li class="prev">&#10094;</li>
+                    <li class="next">&#10095;</li>
+                    <li>March<br><span style="font-size:18px">2024</span></li>
+                </ul>
+            </div>
+            <ul class="weekdays">
+                <li>Mo</li>
+                <li>Tu</li>
+                <li>We</li>
+                <li>Th</li>
+                <li>Fr</li>
+                <li>Sa</li>
+                <li>Su</li>
+            </ul>
+            <ul class="days">
+                <!-- Days will be generated here using JavaScript -->
+            </ul>
+        </div>
+        <div id="event-list">
+            <h2>Events for Selected Date</h2>
+            <ul id="events"></ul>
+        </div>
+    </div>
+    <script src="addEvent.js"></script>
+</body>
+</html>

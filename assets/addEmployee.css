@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ea; /* Light green background */
+    background-image: url('images/registerBG.jpg'); /* Add your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#profile,
+.container
+{
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 12px solid #4caf50; /* Green border */
+    border-radius: 10px;
+    text-align: center; /* Center text */
+    background-color: rgba(255, 255, 255, 0.93); /* Add transparency to the background color */    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #4caf50; /* Green text */
+    margin-top: -5px;
+}
+
+
+#user-details,
+.form-group,
+.notice-title,
+.notice-message 
+{
+    
+    padding: 20px;
+    text-align: left; /* Align text to the left */
+}
+
+.notice-message textarea {
+    width: 100%;
+    height: 00px; /* Set a larger initial height */
+    min-height: 150px; /* Set a minimum height */
+    padding: 10px;
+    border: 2px solid #555; 
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: vertical; /* Allow vertical resizing */
+}
+
+#user-details p {
+    margin: 10px 0;
+    border: 2px solid #555; 
+    font-weight: bold;
+    border-radius: 10px; /* Rounded corners */
+    padding: 12px; /* Add padding for space */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#user-details p strong {
+    color: #555; /* Green text for category names */
+}
+
+#user-details p span,
+label,
+.notice-title label,
+.notice-message label 
+ {
+    margin-bottom: 10px;
+    display: block;
+    color: #555; /* Dark text for details */
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #555; 
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"],
+button
+{
+    background-color: #4caf50; /* Green background for submit button */
+    color: white; /* White text for submit button */
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover,
+button:hover  {
+    background-color: #45a049; /* Darker green on hover */
+}
